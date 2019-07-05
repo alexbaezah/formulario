@@ -1,0 +1,17 @@
+<%= form_with model:@sale, local: true do |f| %>
+ <%= f.label :detalle %>
+  <%= f.text_area :detail %>
+  <br>
+  <%= f.label :categoría %>
+  <%= f.text_field :category %>
+  <br>
+  <%= f.label :valor %>
+  <%= f.number_field :value %>
+  <br>
+  <%= f.label :descuento %>
+  <%= f.number_field :discount %>
+  <br>
+  <%= f.label :exento_de_iva %>
+  <%= f.check_box :tax %>
+  <%= f.submit "agregar" %>
+<% end %>
